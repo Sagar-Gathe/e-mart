@@ -1,38 +1,124 @@
-.App {
+.{
+  box-sizing:  border-box;
+  padding: 0px;
+  margin: 0px;
+}
+header {
+  background-color: #666;
+  padding: 30px;
+  text-align: center;
+  font-size: 35px;
+  color: white;
+}
+body {
+
+  font-family: Arial, Helvetica, sans-serif;
+}
+section {
+
+  display: -webkit-box;
+  display: flex;
+}   
+nav {
+  -webkit-flex: 0.5;
+  -ms-flex: 0.5;
+  flex: 0.5;
+  background-color: #ccc;
+  padding: 20px;
+}
+nav ul {
+  list-style-type: none;
+}
+
+footer {
+  background-color: #777;
+  padding: 10px;
+  text-align: center;
+  color: white;
+}
+article {
+  background-color: #f9f9f9;
+  padding: 20px;
+  margin-bottom: 20px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+}
+
+.category_product-title {
+  font-size: 1.5em;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+figure {
+  margin: 0;
+  padding: 0;
+}
+
+.category-product-image-container {
+  width: 100%;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.category-product-image-container img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 5px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.category-product-details {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-top: 20px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.category-product-specs {
+  color: #555;
+  max-width: 60%;
+}
+
+.category-product-finance {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  align-items: flex-end;
+}
+
+.category-product-finance-price {
+  font-size: 1.5em;
+  color: #333;
+}
+
+.category-product-info-stock {
+  margin-top: 10px;
+  font-size: 1em;
+  color: #555;
+}
+
+.category-product-info-stock label {
+  display: block;
+  margin-top: 5px;
+}
+
+.category-product-action {
+  margin-top: 15px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.category-product-action button {
+  padding: 10px 20px;
+  font-size: 1em;
   color: white;
+  background-color: #666;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-left: 10px;
 }
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.category-product-action button:hover {
+  background-color: #555;
 }
