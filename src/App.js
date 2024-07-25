@@ -44,9 +44,10 @@ function App() {
 
   return (
     <>
+       <div className="container">
       <header>My Store</header>
 
-      <section>
+      <section  className="content">
         <nav>
           {categories.errorMessage && (
             <div>Error : {categories.errorMessage}</div>
@@ -62,6 +63,7 @@ function App() {
       </section>
 
       <footer>footer</footer>
+      </div>
     </>
   );
 }

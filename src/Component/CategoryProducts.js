@@ -1,9 +1,7 @@
 import React from "react";
 
-const Category_products = ({ title, imageUrl, specs,dimension, feature, price,stock }) => {
+const Category_products = ({ title, imageUrl, specs , dimension, feature, price,stock }) => {
 
-  console.log("image ----> ",imageUrl)
-  console.log("title ------------------>",title)
   return (
     <article>
       <div className="category_product-title">{title}</div>
@@ -14,8 +12,8 @@ const Category_products = ({ title, imageUrl, specs,dimension, feature, price,st
       </figure>
 
       <aside>
-        <div className="category-product-info-diamentions">
-          <h3>Diamentions</h3>
+        <div className="category-product-info-dimensions">
+          <h3>Dimentions</h3>
           <label>{specs.dimension}</label>
         </div>
 
@@ -27,8 +25,8 @@ const Category_products = ({ title, imageUrl, specs,dimension, feature, price,st
         )}
 
         <div className="category-product-info-feature">
-          <h3>features</h3>
-          <ul>
+          <h3>Features</h3>
+          <ul  className="features-list">
             {feature?.map((f) => {
               return <li>{f}</li>;
             })}
